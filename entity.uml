@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.csid.autobody.entity</OriginalElement>
+  <nodes>
+    <node x="172.264619883041" y="576.0">org.csid.autobody.entity.AnnonceEntity</node>
+    <node x="818.8038962604887" y="698.5126522961574">org.csid.autobody.entity.RoleEntity</node>
+    <node x="-408.8868253889957" y="752.7610121836927">org.csid.autobody.entity.ImageEntity</node>
+    <node x="188.014619883041" y="-103.95501405810683">org.csid.autobody.entity.CategoryEntity</node>
+    <node x="589.8938681442751" y="643.5126522961574">org.csid.autobody.entity.UserEntity</node>
+    <node x="157.514619883041" y="128.0">org.csid.autobody.entity.ModelEntity</node>
+    <node x="160.764619883041" y="348.0">org.csid.autobody.entity.MakeEntity</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.csid.autobody.entity.MakeEntity" target="org.csid.autobody.entity.ModelEntity" relationship="DEPENDENCY">
+      <point x="-69.0" y="-50.0" />
+      <point x="-78.75" y="61.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.ModelEntity" target="org.csid.autobody.entity.MakeEntity" relationship="DEPENDENCY">
+      <point x="5.25" y="61.0" />
+      <point x="15.0" y="-50.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.AnnonceEntity" target="org.csid.autobody.entity.UserEntity" relationship="TO_ONE">
+      <point x="149.5" y="-310.4873477038426" />
+      <point x="-80.5" y="-15.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.UserEntity" target="org.csid.autobody.entity.RoleEntity" relationship="TO_ONE">
+      <point x="80.5" y="13.056232427366467" />
+      <point x="-59.5" y="13.056232427366467" />
+    </edge>
+    <edge source="org.csid.autobody.entity.AnnonceEntity" target="org.csid.autobody.entity.MakeEntity" relationship="DEPENDENCY">
+      <point x="-62.29166666666674" y="-457.0" />
+      <point x="6.7083333333332575" y="50.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.ModelEntity" target="org.csid.autobody.entity.MakeEntity" relationship="TO_ONE">
+      <point x="-24.75" y="61.0" />
+      <point x="-15.0" y="-50.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.AnnonceEntity" target="org.csid.autobody.entity.ImageEntity" relationship="TO_MANY">
+      <point x="-149.5" y="-230.23898781630726" />
+      <point x="88.0" y="0.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.ImageEntity" target="org.csid.autobody.entity.AnnonceEntity" relationship="TO_ONE">
+      <point x="88.0" y="15.0" />
+      <point x="-149.5" y="-215.23898781630726" />
+    </edge>
+    <edge source="org.csid.autobody.entity.AnnonceEntity" target="org.csid.autobody.entity.UserEntity" relationship="DEPENDENCY">
+      <point x="149.5" y="-295.4873477038426" />
+      <point x="-80.5" y="0.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.MakeEntity" target="org.csid.autobody.entity.ModelEntity" relationship="TO_MANY">
+      <point x="0.0" y="-50.0" />
+      <point x="-9.75" y="61.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.AnnonceEntity" target="org.csid.autobody.entity.CategoryEntity" relationship="TO_ONE">
+      <point x="142.125" y="-457.0" />
+      <point x="463.889619883041" y="-79.95501405810683" />
+      <point x="74.5" y="-15.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.AnnonceEntity" target="org.csid.autobody.entity.ModelEntity" relationship="TO_ONE">
+      <point x="69.31725146198829" y="-457.0" />
+      <point x="391.0818713450293" y="189.0" />
+      <point x="105.0" y="0.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.AnnonceEntity" target="org.csid.autobody.entity.CategoryEntity" relationship="DEPENDENCY">
+      <point x="127.125" y="-457.0" />
+      <point x="448.889619883041" y="-64.95501405810683" />
+      <point x="74.5" y="0.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.AnnonceEntity" target="org.csid.autobody.entity.ImageEntity" relationship="DEPENDENCY">
+      <point x="-149.5" y="-260.23898781630726" />
+      <point x="88.0" y="-30.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.ImageEntity" target="org.csid.autobody.entity.AnnonceEntity" relationship="DEPENDENCY">
+      <point x="88.0" y="-15.0" />
+      <point x="-149.5" y="-245.23898781630726" />
+    </edge>
+    <edge source="org.csid.autobody.entity.AnnonceEntity" target="org.csid.autobody.entity.MakeEntity" relationship="TO_ONE">
+      <point x="-77.29166666666674" y="-457.0" />
+      <point x="-8.291666666666742" y="50.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.ModelEntity" target="org.csid.autobody.entity.CategoryEntity" relationship="TO_MANY">
+      <point x="0.0" y="-61.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.UserEntity" target="org.csid.autobody.entity.RoleEntity" relationship="DEPENDENCY">
+      <point x="80.5" y="-1.9437675726335328" />
+      <point x="-59.5" y="-1.9437675726335328" />
+    </edge>
+    <edge source="org.csid.autobody.entity.ModelEntity" target="org.csid.autobody.entity.CategoryEntity" relationship="DEPENDENCY">
+      <point x="-15.0" y="-61.0" />
+      <point x="-15.0" y="39.0" />
+    </edge>
+    <edge source="org.csid.autobody.entity.AnnonceEntity" target="org.csid.autobody.entity.ModelEntity" relationship="DEPENDENCY">
+      <point x="-149.5" y="-297.73898781630726" />
+      <point x="140.014619883041" y="735.2610121836927" />
+      <point x="140.014619883041" y="189.0" />
+      <point x="-105.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.7542372881355932" showDependencies="true" x="591.990072825213" y="698.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
